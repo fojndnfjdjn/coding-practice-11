@@ -47,5 +47,5 @@ jobs:
         with:
           name: 'UNIQUEID'
           value: ${{ steps.getuuid.outputs.uuid }}
-          repository: fojndnfjdjn/coding-practice-0
+          repository: fojndnfjdjn/coding-practice-18
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
