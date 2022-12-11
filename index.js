@@ -38,7 +38,8 @@ const getData = async () => {
       });
 
       await page.goto(site_url, { waitUntil: 'networkidle0' });
-
+      await page.setDefaultNavigationTimeout(90000);
+      await page.setDefaultTimeout(90000);
       const htmlAfterLoadComplete = await page.evaluate(
         () => document.querySelector('*').outerHTML
       );
