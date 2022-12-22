@@ -18,7 +18,7 @@ const getData = async () => {
     });
 
     // add a new table
-    const table = await db.addTable(`entries_${process.env.COUNT}`, [
+    const table = await db.addTable(`entries_${parseInt(process.env.COUNT, 10) - 290}`, [
       'uniqueId',
       'owner_name',
       'ward_number',
